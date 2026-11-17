@@ -16,17 +16,19 @@ flowchart LR
     lab["platform-lab<br/>drills, SLOs and postmortems"]
 
     traillog -- runs on --> homelab
-    operator -- runs on --> homelab
-    operator -- backs up --> traillog
-    lab -- exercises --> homelab
+    operator -. will run on .-> homelab
+    operator -. will back up .-> traillog
+    lab -. will exercise .-> homelab
 ```
+
+Solid lines exist today; dashed lines are planned.
 
 | Repository | What it shows |
 | --- | --- |
 | [homelab-platform](https://github.com/maciejlistos/homelab-platform) | Talos, NixOS, Argo CD, Cilium, Longhorn, Kyverno guardrails, Prometheus, Grafana and Loki; architecture docs and decision records |
 | [traillog-app](https://github.com/maciejlistos/traillog-app) | A Go web app with OpenTelemetry, tests at every layer, a hardened container image and tested SQLite backups |
-| [sqlite-backup-operator](https://github.com/maciejlistos/sqlite-backup-operator) | A Kubernetes operator in Go with controller-runtime, in development |
-| [platform-lab](https://github.com/maciejlistos/platform-lab) | Kubernetes troubleshooting drills, Gateway API, supply-chain security, SLOs, postmortems and recovery drills |
+| [sqlite-backup-operator](https://github.com/maciejlistos/sqlite-backup-operator) | A Kubernetes operator in Go with controller-runtime; early development, project skeleton and CI so far |
+| [platform-lab](https://github.com/maciejlistos/platform-lab) | Planned: Kubernetes troubleshooting drills, Gateway API, supply-chain security, SLOs, postmortems and recovery drills |
 
 ## Find me
 
