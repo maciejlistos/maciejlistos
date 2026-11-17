@@ -27,8 +27,8 @@ Solid lines exist today; dashed lines are planned.
 | --- | --- |
 | [homelab-platform](https://github.com/maciejlistos/homelab-platform) | Talos, NixOS, Argo CD, Cilium, Longhorn, Kyverno guardrails, Prometheus, Grafana and Loki; architecture docs and decision records |
 | [traillog-app](https://github.com/maciejlistos/traillog-app) | A Go web app with OpenTelemetry, tests at every layer, a hardened container image and tested SQLite backups |
-| [sqlite-backup-operator](https://github.com/maciejlistos/sqlite-backup-operator) | A Kubernetes operator in Go with controller-runtime; early development, project skeleton and CI so far |
-| [platform-lab](https://github.com/maciejlistos/platform-lab) | Planned: Kubernetes troubleshooting drills, Gateway API, supply-chain security, SLOs, postmortems and recovery drills |
+| sqlite-backup-operator (In progress) | A Kubernetes operator in Go with controller-runtime; early development, project skeleton and CI so far |
+| platform-lab (In progress) | Planned: Kubernetes troubleshooting drills, Gateway API, supply-chain security, SLOs, postmortems and recovery drills |
 
 ## Find me
 
